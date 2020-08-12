@@ -12,6 +12,26 @@ module.exports = (config) => {
     });
   }
 
+  service.get('/list', (req, res, next) => {
+    return next('Not implemented');
+  });
+
+  service.get('/list-short', (req, res, next) => {
+    return next('Not implemented');
+  });
+
+  service.get('/name', (req, res, next) => {
+    return next('Not implemented');
+  });
+
+  service.get('/speaker/:shortname', (req, res, next) => {
+    return next('Not implemented');
+  });
+
+  service.get('/artwork/:shortname', (req, res, next) => {
+    return next('Not implemented');
+  });
+
   // eslint-disable-next-line no-unused-vars
   service.use((error, req, res, next) => {
     res.status(error.status || 500);
