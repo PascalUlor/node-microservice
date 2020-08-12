@@ -55,6 +55,7 @@ app.use((err, req, res, next) => {
   return res.render('error');
 });
 
-app.listen(3080);
+const port = 3080
+app.listen(port, console.log(`App running on port ${port}`));
 
 module.export = app;
