@@ -3,7 +3,7 @@ const express = require('express');
 const ServiceRegistry = require('./lib/ServiceRegistry');
 
 const service = express();
-// const ServiceRegistry = require('./ServiceRegistry');
+
 
 module.exports = (config) => {
   const log = config.log();
